@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@drawable/dial"
+        android:id="@+id/ic_contact"
+        android:title="Contact"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/rise_issue"
+        android:title="send an issue" />
+</menu>

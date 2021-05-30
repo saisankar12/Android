@@ -1,0 +1,75 @@
+apply plugin: "com.android.library"
+apply plugin: "com.getkeepsafe.dexcount"
+apply from: "gradle/script/coverage.gradle"
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdk
+        targetSdkVersion rootProject.ext.targetSdk
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        defaultPublishConfig "release"
+        publishNonDefault true
+        consumerProguardFiles "proguard-rules.pro"
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            testCoverageEnabled true
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
+    }
+    sourceSets {
+        main {
+            java.srcDirs = ["src/main/java"]
+            resources.srcDirs = ["src/main/res"]
+        }
+        test {
+            java.srcDirs = ["src/test/java"]
+            resources.srcDirs = ["src/test/res"]
+        }
+        androidTest.setRoot("test")
+    }
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+ext {
+    guavaVersion = "23.0-android"
+    junitVersion = "4.12"
+    mockitoVersion = "2.8.47"
+    easymockVersion = "3.4"
+    powermockVersion = "1.7.1"
+}
+
+dependencies {
+    compile "com.android.support:design:${rootProject.ext.androidSupportLibVersion}"
+    compile("com.google.guava:guava:${guavaVersion}") {
+        exclude module: "jsr305"
+    }
+    testCompile "junit:junit:${junitVersion}"
+    testCompile "org.mockito:mockito-core:${mockitoVersion}"
+    testCompile "org.easymock:easymock:${easymockVersion}"
+    testCompile "org.powermock:powermock-module-junit4:${powermockVersion}"
+    testCompile "org.powermock:powermock-api-mockito2:${powermockVersion}"
+    testCompile "org.powermock:powermock-api-easymock:${powermockVersion}"
+}
+
+configurations.all {
+    resolutionStrategy {
+        force "junit:junit:${junitVersion}"
+    }
+}
+
+apply from: "$rootProject.projectDir/publish.gradle"

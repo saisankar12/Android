@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "551203039913",
+    "firebase_url": "https://vvitbalotsav-f619d.firebaseio.com",
+    "project_id": "vvitbalotsav-f619d",
+    "storage_bucket": "vvitbalotsav-f619d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:551203039913:android:f8c7c034e093c2cc",
+        "android_client_info": {
+          "package_name": "app.balotsav.com.balotsavslider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "551203039913-bo7ts830sp4hmn29ee3283jmuh7he9ar.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.balotsav.com.balotsavslider",
+            "certificate_hash": "77e389b306889d37a45f523d3976f8807c12feae"
+          }
+        },
+        {
+          "client_id": "551203039913-guvj3dh6n0fhb62vqkbo2m3not8mmqf7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHuLn0DObvsLB9A8z-LOcDK_6ujx4yAEc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "551203039913-guvj3dh6n0fhb62vqkbo2m3not8mmqf7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f9e89b"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/rootcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:theme="@style/Theme.AppCompat"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="1dp">
+
+        <ImageView
+            android:id="@+id/poster_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/recyclertitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:background="#2c2d2c"
+            android:ellipsize="end"
+            android:fontFamily="serif"
+            android:maxLines="2"
+            android:scrollHorizontally="true"
+            android:text="movie_title"
+            android:textAlignment="viewStart"
+            android:textColor="#1ad0f4" />
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+

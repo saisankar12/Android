@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "763196619446",
+    "firebase_url": "https://analysis-abbba.firebaseio.com",
+    "project_id": "analysis-abbba",
+    "storage_bucket": "analysis-abbba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:763196619446:android:aa7da904d499dfb3",
+        "android_client_info": {
+          "package_name": "com.example.sudhakar.analysis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "763196619446-l90rn5o3fftjdvqmp4scp2bkhq6cakk2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sudhakar.analysis",
+            "certificate_hash": "06c9156bc742e24dd392d6a76a7c21f3d31a23b9"
+          }
+        },
+        {
+          "client_id": "763196619446-ss76pjmdo2m2sr2v92qm48a5cp5ldm9j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpU8RhjLMULXsHWhPQGlK26xT4QVzmPVU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "763196619446-ss76pjmdo2m2sr2v92qm48a5cp5ldm9j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

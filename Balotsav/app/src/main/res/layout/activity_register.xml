@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clg"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2.5dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="9dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/sname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/school_name"
+                    android:maxLines="1"
+                    />
+
+                <Spinner
+                    android:id="@+id/id_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:autofillHints="@string/school_type"/>
+
+                <EditText
+                    android:id="@+id/scode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/School_code"
+                    android:maxLines="1"
+                     />
+
+                <EditText
+                    android:id="@+id/pswd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                     />
+
+                <EditText
+                    android:id="@+id/t1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/head_master_name"
+                    android:maxLines="1"
+                    />
+
+                <EditText
+                    android:id="@+id/tmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/head_master_email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    />
+
+                <EditText
+                    android:id="@+id/p1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/head_master_phno"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    />
+
+                <EditText
+                    android:id="@+id/t2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/coordinator_name"
+                    android:maxLines="1"
+                     />
+
+                <EditText
+                    android:id="@+id/p2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/coordinator_phno"
+                    android:inputType="text"
+                    android:maxLength="13"
+                    android:maxLines="1"
+                     />
+
+                <EditText
+                    android:id="@+id/village"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/town"
+                    android:maxLines="1"
+                     />
+
+                <EditText
+                    android:id="@+id/District"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/district"
+                    android:maxLines="1"
+                     />
+
+                <EditText
+                    android:id="@+id/State"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/state"
+                    android:maxLines="1"
+                     />
+
+                <EditText
+                    android:id="@+id/pincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/pincode"
+                    android:maxLines="1"
+                     />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/id_needAcomdiation"
+                    android:onClick="clickNeedAcom"
+                    android:text="@string/need_accomodation"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/id_Acomdationlink"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:background="@color/colorPrimary"
+                    android:id="@+id/register"
+                    android:text="@string/registration" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="clcikToLogin"
+                    android:text="@string/login"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

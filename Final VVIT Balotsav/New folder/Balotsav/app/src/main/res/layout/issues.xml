@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_description_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="serif"
+        android:text="@string/contmsg"
+        android:textColor="#046c02"
+        android:textSize="@dimen/desc"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tv_description1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="serif"
+        android:layout_margin="5dp"
+        android:text="@string/contact_chand"
+        android:textColor="#df06d8"
+        android:textSize="20dp"
+         />
+</LinearLayout>

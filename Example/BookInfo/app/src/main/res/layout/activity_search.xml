@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="50dp"
+    tools:context=".SearchActivity">
+
+
+    <com.libizo.CustomEditText
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:layout_margin="5dp"
+    android:id="@+id/edit"
+    android:hint="Enter Book Name to Search"
+    android:inputType="text"
+    android:layout_gravity="center"
+    app:libIZO_setPrefixTextColor="#FF4081"
+    app:libIZO_setBorderColor="#8f1f15"
+    app:libIZO_setBorderView="true"
+    app:libIZO_setClearIconVisible="true"
+    app:libIZO_setCornerRadius="10dp"
+    app:libIZO_setStrokeWidth="2dp"/>
+
+
+
+    <life.sabujak.roundedbutton.RoundedButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:gravity="center"
+        android:padding="24dp"
+        android:onClick="search"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:text="Search"
+        android:textColor="#ffffff"
+        app:buttonGradientStartColor="@color/colorPrimary"
+        app:buttonGradientEndColor="@color/colorAccent"
+        app:buttonCornerRadius="20dp"
+        />
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+       android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+
+
+</LinearLayout>

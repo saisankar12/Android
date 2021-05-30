@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <!--<RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="@drawable/button_shape">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin"
+            android:id="@+id/admin_login"
+            android:textColor="#DA3A07"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Faculty"
+            android:id="@+id/faculty_login"
+            android:textColor="#070BDA"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student"
+            android:id="@+id/studnet_login"
+            android:textColor="#0F9805"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"/>
+
+    </RadioGroup>-->
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Name"
+        android:layout_marginTop="10dp"
+        android:id="@+id/username" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Name"
+        android:layout_marginTop="10dp"
+        android:id="@+id/password" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/login"
+        android:textColor="#2196F3"
+        android:background="@drawable/button_shape"
+        android:layout_marginTop="10dp"
+        android:onClick="login" />
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        app:cardBackgroundColor="#fafafa"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/card_view"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/user_icon"
+                android:elevation="4dp" />
+            <TextView
+                android:textSize="18sp"
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Dara Sivaiah"
+                android:layout_toRightOf="@+id/card_view" />
+
+            <ImageView
+                android:id="@+id/ic_phone"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/phone_icon"
+                android:layout_toRightOf="@+id/card_view"
+                android:layout_below="@+id/tv_name" />
+
+            <TextView
+                android:textSize="15sp"
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="17dp"
+                android:text="9492936406"
+                android:layout_toRightOf="@+id/ic_phone"
+                android:layout_below="@+id/tv_name" />
+
+            <ImageView
+                android:id="@+id/ic_email"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_email"
+                android:layout_toRightOf="@+id/card_view"
+                android:layout_below="@+id/tv_phone" />
+
+            <TextView
+                android:textSize="15sp"
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="17dp"
+                android:text="sivaapssdc@gmail.com"
+                android:layout_toRightOf="@+id/ic_email"
+                android:layout_below="@+id/tv_phone" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

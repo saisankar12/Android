@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone Number Authentication"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:fontFamily="serif"
+        android:textColor="#3F51B5"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Mobile Number"
+        android:id="@+id/et_mobilenumber"
+        android:inputType="phone"
+        android:textColorHint="#C61104"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="sendOTP"
+        android:layout_gravity="center"
+        android:text="Send OTP"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Valid OTP"
+        android:inputType="phone"
+        android:textColorHint="#04AA0B"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:layout_marginTop="20dp"
+        android:id="@+id/et_verfiyotp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="verify"
+        android:layout_gravity="center"
+        android:text="Verify"/>
+
+
+
+
+</LinearLayout>

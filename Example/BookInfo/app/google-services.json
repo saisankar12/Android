@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "36047153046",
+    "firebase_url": "https://fir-authentication-98dc3.firebaseio.com",
+    "project_id": "fir-authentication-98dc3",
+    "storage_bucket": "fir-authentication-98dc3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36047153046:android:3ee2200f69529786",
+        "android_client_info": {
+          "package_name": "com.example.bookinfo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36047153046-mjbumhdvmk6pj1isifnmll01ffrllbd1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBA_a9OFZaqkx1cwxqvUWSWS3p43Nm6xU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

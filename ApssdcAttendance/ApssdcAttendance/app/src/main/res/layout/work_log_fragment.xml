@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:background="@drawable/background_color_frag">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:padding="@dimen/activity_horizontal_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="Task Date"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:text=":"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:id="@+id/iv_date"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.25"
+            style="@style/date_icon"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="-- -- --"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColorHint="@color/btn_background">
+
+                <EditText
+                    android:id="@+id/taskAssigned"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter task (in detail)"
+                    android:drawableLeft="@drawable/ic_task"
+                    android:drawableTint="@color/btn_background"
+                    android:drawablePadding="15dp"
+                    android:textColor="@color/white"
+                    android:maxLines="5"
+                    android:minLines="2"
+                    android:lines="5" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Task Status"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <RadioGroup
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp">
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Completed"
+            android:layout_weight="1"
+            android:textColor="@color/white"/>
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Pending"
+            android:layout_weight="1"
+            android:textColor="@color/white"/>
+
+    </RadioGroup>
+
+   <android.support.design.widget.TextInputLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="20dp"
+       android:textColorHint="@color/btn_background">
+
+    <EditText
+        android:id="@+id/percentage_status"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Percentage completion (%)"
+        android:layout_marginTop="20dp"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/white"
+        android:maxLength="2"
+        android:textColor="@color/btn_background"
+        android:drawableLeft="@drawable/ic_percentage"
+        android:drawablePadding="15dp"
+        android:drawableTint="@color/white"/>
+
+   </android.support.design.widget.TextInputLayout>
+
+   <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textColorHint="@color/btn_background">
+
+    <EditText
+        android:id="@+id/otherWorks"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Other works completed (if any)"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/white"
+        android:drawableLeft="@drawable/ic_worklog"
+        android:drawablePadding="15dp"
+        android:textColor="@color/white"
+        android:drawableTint="@color/btn_background"/>
+
+   </android.support.design.widget.TextInputLayout>
+
+   <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+       android:textColorHint="@color/btn_background">
+
+        <EditText
+            android:id="@+id/issues"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="issues / concerns"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/white"
+            android:drawableLeft="@drawable/ic_issues"
+            android:drawableTint="@color/btn_background"
+            android:drawablePadding="15dp"
+            android:textColor="@color/white"/>
+
+   </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/work_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:text="Submit"
+            android:textColor="@android:color/black" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"/>
+
+   </LinearLayout>
+
+</ScrollView>

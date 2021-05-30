@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       >
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="30sp"
+           android:text="Login Page"
+           android:gravity="center"/>
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/chats"
+           android:layout_marginTop="10dp"
+           android:hint="User Name"/>
+
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/calls"
+           android:hint="Password"/>
+
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/status"
+           android:textStyle="bold"
+           android:background="#0BBA12"
+           android:layout_marginTop="10dp"
+           android:text="Login"
+           android:textColor="#FFFFFF"
+           android:textSize="20sp"
+           android:fontFamily="serif"/>
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/status"
+           android:textColor="#FFFFFF"
+           android:textSize="20sp"
+           android:fontFamily="serif"
+           android:background="#D68104"
+           android:layout_marginTop="10dp"
+           android:text="Register"/>
+
+
+
+
+   </LinearLayout>
+
+</FrameLayout>

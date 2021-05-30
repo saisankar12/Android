@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:fitsSystemWindows="true"
+        android:text="Shake Detector Sensor"
+        android:textSize="20sp"
+        android:fontFamily="serif"
+        android:textColor="#0822B3"/>
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:fitsSystemWindows="true"
+        android:text="Light Detector Sensor"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:fontFamily="serif"
+        android:textColor="#0822B3"/>
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:fitsSystemWindows="true"
+        android:text="Gyroscope Sensor"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:fontFamily="serif"
+        android:textColor="#0822B3"/>
+
+    <Switch
+        android:id="@+id/switch4"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:fitsSystemWindows="true"
+        android:text="Flip Detector"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:fontFamily="serif"
+        android:textColor="#0822B3"/>
+
+    <Switch
+        android:id="@+id/switch5"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:fitsSystemWindows="true"
+        android:text="Touch Sensor"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:fontFamily="serif"
+        android:textColor="#0822B3"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="10dp"
+        android:text="sai"
+        android:fontFamily="serif"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        android:background="#041DA8"
+        android:textSize="40sp"/>
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton" />
+</LinearLayout>

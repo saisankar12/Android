@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Hill Festival</string>
+    <string name="photo_gallery">ఫొటో గ్యాలరీ / Photo Gallery</string>
+    <string name="howtoreach">క్షేత్రము చేరుటకు మార్గము / The path to reach the field</string>
+    <string name="bus">బస్ మార్గము / Bus Route</string>
+    <string name="train">రైలు మార్గం / Train Route</string>
+    <string name="flight">విమాన మార్గము / Airport</string>
+</resources>

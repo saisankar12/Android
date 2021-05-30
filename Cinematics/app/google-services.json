@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "1035670815973",
+    "firebase_url": "https://principal-lane-199005.firebaseio.com",
+    "project_id": "principal-lane-199005",
+    "storage_bucket": "principal-lane-199005.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035670815973:android:6c6dcb26111de642",
+        "android_client_info": {
+          "package_name": "com.example.saisankar.cinematics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1035670815973-qc43ek68si8o54l3mb8r25cl33lb7uc6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.saisankar.cinematics",
+            "certificate_hash": "3bbf46975138a23c35b5503eeab26114c98ba8ae"
+          }
+        },
+        {
+          "client_id": "1035670815973-2789sa1ucje9rg5h9fmpm37np96q5io8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBft4YVA5VTv5B4cHe5bOa1UrhjKRdDLNw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1035670815973-2789sa1ucje9rg5h9fmpm37np96q5io8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035670815973:android:9a95a070f98b2909",
+        "android_client_info": {
+          "package_name": "com.example.saisankar.groupchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1035670815973-2789sa1ucje9rg5h9fmpm37np96q5io8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBft4YVA5VTv5B4cHe5bOa1UrhjKRdDLNw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

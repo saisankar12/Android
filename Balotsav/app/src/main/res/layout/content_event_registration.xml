@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".EventRegistration"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:showIn="@layout/activity_event_registration">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/design"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/ename"
+                android:text=""
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_weight="0.15"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="1"
+                android:layout_weight="0.7">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:weightSum="9"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="25dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:text="@string/team"
+                        android:id="@+id/team"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:text="@string/juniors"
+                        android:visibility="gone"
+                        android:id="@+id/junior"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:id="@+id/subjunior"
+                        android:text="@string/subjuniors"
+                        android:visibility="gone"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:text="@string/seniors"
+                        android:visibility="gone"
+                        android:id="@+id/senior"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="25dp"
+                    android:weightSum="9"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:id="@+id/teamno"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:visibility="gone"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:text=""
+                        android:visibility="gone"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:text=""
+                        android:visibility="gone"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:visibility="gone"
+                        android:id="@+id/id_SpinnerJun"
+                        android:layout_weight="3"/>
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:visibility="gone"
+                        android:id="@+id/id_SUBJUN"
+                        android:layout_weight="3"/>
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:visibility="gone"
+                        android:id="@+id/id_Spinnersenior"
+                        android:layout_weight="3"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="1"
+                android:background="@drawable/design"
+                android:layout_weight="0.15">
+                <Button
+                    android:layout_width="0dp"
+                    android:text="@string/registration"
+                    android:id="@+id/id_eventregister"
+                    android:onClick="clickRegister"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="#f55a52" />
+                <Button
+                    android:layout_width="0dp"
+                    android:text="@string/cancel"
+                    android:layout_height="match_parent"
+                    android:onClick="clickReset"
+                    android:layout_weight="0.5"/>
+            </LinearLayout>>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        app:cardCornerRadius="5dp"
+        app:cardMaxElevation="8dp"
+        app:cardElevation="4dp"
+        android:background="@drawable/design"
+        android:layout_margin="5dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/design"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/rules_of_events"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:background="@color/colorPrimary"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/id_rules_text"
+
+                    />
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+    <!-- <android.support.v7.widget.CardView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_margin="10dp"
+         app:cardCornerRadius="20dp">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="5dp"
+                 android:gravity="center"
+                 android:text="Event name"
+                 android:textSize="25sp"
+                 android:id="@+id/ename"
+                 android:textStyle="bold" />
+
+             <GridLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="360dp"
+                 android:layout_marginTop="10dp"
+                 android:columnCount="2"
+                 android:orientation="horizontal"
+                 android:rowCount="4"
+                 tools:context=".GridLayoutActivity">
+
+                &lt;!&ndash; <ImageView
+                     android:layout_width="100dp"
+                     android:layout_height="80dp"
+                     android:layout_margin="5dp" />
+
+                 <ImageView
+                     android:layout_width="100dp"
+                     android:layout_height="80dp"
+                     android:layout_margin="5dp"
+                     android:src="@mipmap/ic_launcher"
+                     />&ndash;&gt;
+
+                 &lt;!&ndash;<ImageView&ndash;&gt;
+                     &lt;!&ndash;android:layout_width="100dp"&ndash;&gt;
+                     &lt;!&ndash;android:layout_height="80dp"&ndash;&gt;
+                     &lt;!&ndash;android:layout_margin="5dp"&ndash;&gt;
+                     &lt;!&ndash;android:src="@mipmap/ic_launcher" />&ndash;&gt;
+                 <TextView
+                     android:layout_width="100dp"
+                     android:layout_height="80dp"
+                     android:layout_margin="5dp"
+                     android:layout_marginLeft="2.5dp"
+                     android:gravity="center"
+                     android:text="Team"
+                     android:visibility="gone"
+                     android:id="@+id/team"
+                     android:textSize="15sp"
+                     android:textStyle="bold"
+                     />
+                 <TextView
+                     android:layout_width="100dp"
+                     android:layout_height="80dp"
+                     android:layout_margin="5dp"
+                     android:layout_marginLeft="2.5dp"
+                     android:gravity="center"
+                     android:id="@+id/teamno"
+                     android:visibility="gone"
+                     android:textSize="15sp"
+                     android:textStyle="bold"
+                     />
+
+                 <TextView
+                     android:layout_width="100dp"
+                     android:layout_height="80dp"
+                     android:layout_margin="5dp"
+                     android:layout_marginLeft="2.5dp"
+                     android:gravity="center"
+                     android:text="JUNIORS"
+                     android:id="@+id/junior"
+                     android:visibility="gone"
+                     android:textSize="15sp"
+                     android:textStyle="bold" />
+
+                 <Spinner
+                     android:id="@+id/id_SpinnerJun"
+                     android:layout_width="100dp"
+                     android:layout_height="80dp"
+                     android:layout_margin="5dp"
+                     android:gravity="center"
+                     android:visibility="gone"/>
+
+                 &lt;!&ndash;<Spinner&ndash;&gt;
+                     &lt;!&ndash;android:id="@+id/id_SpinnerGirlsJun"&ndash;&gt;
+                     &lt;!&ndash;android:layout_width="100dp"&ndash;&gt;
+                     &lt;!&ndash;android:layout_height="80dp"&ndash;&gt;
+                     &lt;!&ndash;android:layout_margin="5dp"&ndash;&gt;
+                     &lt;!&ndash;android:gravity="center" />&ndash;&gt;
+
+                 <TextView
+                     android:layout_width="100dp"
+                     android:layout_height="80dp"
+                     android:layout_margin="2.5dp"
+                     android:layout_marginLeft="2.5dp"
+                     android:gravity="center"
+                     android:padding="15dp"
+                     android:text="SUB JUNIORS"
+                     android:id="@+id/subjunior"
+                     android:visibility="gone"
+                     android:textSize="14sp"
+                     android:textStyle="bold" />
+
+                 &lt;!&ndash;<Spinner&ndash;&gt;
+                     &lt;!&ndash;android:id="@+id/id_SpinnerBoysSUBJUN"&ndash;&gt;
+                     &lt;!&ndash;android:layout_width="100dp"&ndash;&gt;
+                     &lt;!&ndash;android:layout_height="80dp"&ndash;&gt;
+                     &lt;!&ndash;android:layout_margin="5dp"&ndash;&gt;
+                     &lt;!&ndash;android:gravity="center" />&ndash;&gt;
+
+                 <Spinner
+                     android:id="@+id/id_SUBJUN"
+                     android:layout_width="100dp"
+                     android:layout_height="80dp"
+                     android:layout_margin="5dp"
+                     android:gravity="center"
+                     android:visibility="gone"/>
+
+                 <TextView
+                     android:layout_width="100dp"
+                     android:layout_height="80dp"
+                     android:layout_margin="2.55dp"
+                     android:layout_marginLeft="2.5dp"
+                     android:gravity="center"
+                     android:text="SENIORS"
+                     android:visibility="gone"
+                     android:id="@+id/senior"
+                     android:textSize="15sp"
+                     android:textStyle="bold" />
+
+
+                 <Spinner
+                     android:id="@+id/id_Spinnersenior"
+                     android:layout_width="100dp"
+                     android:layout_height="80dp"
+                     android:layout_margin="5dp"
+                     android:gravity="center"
+                     android:visibility="gone"/>
+
+                 &lt;!&ndash;<Spinner&ndash;&gt;
+                     &lt;!&ndash;android:id="@+id/id_SpinnerGirlssenior"&ndash;&gt;
+                     &lt;!&ndash;android:layout_width="100dp"&ndash;&gt;
+                     &lt;!&ndash;android:layout_height="80dp"&ndash;&gt;
+                     &lt;!&ndash;android:layout_margin="5dp"&ndash;&gt;
+                     &lt;!&ndash;android:gravity="center" />&ndash;&gt;
+             </GridLayout>
+             <Button
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="5dp"
+                 android:background="@null"
+                 android:id="@+id/id_eventregister"
+                 android:text="Register"
+                 android:onClick="clickRegister"
+                 android:textSize="20sp" />
+         </LinearLayout>
+     </android.support.v7.widget.CardView>-->
+</LinearLayout>

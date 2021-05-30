@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lh70"
+        android:layout_margin="@dimen/lm5"
+        android:orientation="horizontal"
+        app:cardCornerRadius="@dimen/cCR">
+
+        <TextView
+            android:id="@+id/txtType"
+            android:layout_width="@dimen/lw200"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/lm5"
+            android:padding="@dimen/p5"
+            android:text="@string/Topic"
+            android:textSize="@dimen/tS18" />
+
+        <Button
+            android:id="@+id/btnAttempt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="185dp"
+            android:layout_marginLeft="185dp"
+            android:layout_marginTop="@dimen/lmt10"
+            android:background="@drawable/cornerborder"
+            android:backgroundTint="@color/lightblue"
+            android:drawableEnd="@drawable/ic_edit_black_24dp"
+            android:drawableRight="@drawable/ic_edit_black_24dp"
+            android:padding="@dimen/p10"
+            android:text="@string/Attempquiz"
+            android:textColor="@color/white" />
+    </android.support.v7.widget.CardView>
+    <!--  <View
+          android:layout_width="match_parent"
+          android:layout_weight="0.01"
+          android:layout_height="1dp"
+          android:background="#9f026e"/>
+-->
+</LinearLayout>

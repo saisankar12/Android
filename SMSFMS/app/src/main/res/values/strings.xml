@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SMS&amp;FMS</string>
+
+
+    <string-array name="department">
+        <item>Select Your Department</item>
+        <item>CSE</item>
+        <item>ECE</item>
+        <item>EEE</item>
+        <item>MECH</item>
+        <item>CIVIL</item>
+        <item>IT</item>
+        <item>MCA</item>
+        <item>MBA</item>
+    </string-array>
+
+    <string-array name="designation">
+        <item>Select Your Designation</item>
+        <item>Professor</item>
+        <item>Associate Professor</item>
+        <item>Assistant Professor</item>
+        <item>Programmer</item>
+        <item>Lab Incharge</item>
+    </string-array>
+</resources>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">WidgetsExample</string>
+
+    <string-array name="languages">
+        <item>Telugu</item>
+        <item>English</item>
+        <item>Hindi</item>
+        <item>Marati</item>
+        <item>Urdu</item>
+        <item>Tamil</item>
+        <item>Bengali</item>
+        <item>Orisa</item>
+        <item>Malayalam</item>
+        <item>Kannada</item>
+    </string-array>
+</resources>

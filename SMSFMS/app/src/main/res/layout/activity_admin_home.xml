@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context=".admin.AdminHome">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#03A9F4"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Admin Home"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@drawable/button_shape"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/student"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="serif"
+                android:text="Student"
+                android:textColor="#3F51B5"
+                android:textSize="25sp" />
+
+            <RadioButton
+                android:id="@+id/faculty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="serif"
+                android:text="Faculty"
+                android:textColor="#F44336"
+                android:textSize="25sp" />
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:id="@+id/studetview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Student Details"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:background="#673AB7"
+                android:textColor="#FFFFFF"
+                android:fontFamily="serif"
+                android:textAllCaps="true"/>
+
+            <EditText
+                android:id="@+id/student_roll_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Student Roll Number" />
+
+            <EditText
+                android:id="@+id/student_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Student Name" />
+
+            <EditText
+                android:id="@+id/student_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Student Mail Id" />
+
+            <EditText
+                android:id="@+id/student_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Student Phone Number" />
+
+            <Spinner
+                android:id="@+id/student_department"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/department"
+                android:background="@drawable/button_shape"/>
+
+            <Button
+                android:id="@+id/save_student"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_shape"
+                android:fontFamily="serif"
+                android:padding="10dp"
+                android:text="Save Student Data"
+                android:textColor="#0BBA12"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/facultyview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Faculty Details"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:background="#7E5F04"
+                android:textColor="#FFFFFF"
+                android:fontFamily="serif"
+                android:textAllCaps="true"/>
+
+            <EditText
+                android:id="@+id/faculty_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Faculty ID" />
+
+            <EditText
+                android:id="@+id/faculty_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Faculty Name" />
+
+            <EditText
+                android:id="@+id/faculty_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Faculty Mail Id" />
+
+            <EditText
+                android:id="@+id/faculty_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Faculty Phone Number" />
+
+            <Spinner
+                android:id="@+id/faculty_department"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:entries="@array/department"
+                android:background="@drawable/button_shape"/>
+
+            <Spinner
+                android:id="@+id/faculty_designation"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:entries="@array/designation"
+                android:background="@drawable/button_shape"/>
+
+            <Button
+                android:id="@+id/save_faculty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_shape"
+                android:fontFamily="serif"
+                android:padding="10dp"
+                android:text="Save Faculty Data"
+                android:textColor="#DD3A06"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@drawable/button_shape"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Your Result Will Display Here"
+            android:textColor="#989393"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "156502715635",
+    "firebase_url": "https://apssdcattendance.firebaseio.com",
+    "project_id": "apssdcattendance",
+    "storage_bucket": "apssdcattendance.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156502715635:android:3a2a437ac07dd2df",
+        "android_client_info": {
+          "package_name": "in.apssdc.attendance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "156502715635-8bec12s6k2k8n2j9vhrb8j651g4s9jdj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAF7Fw6HOis0Clgn9uzV-PJoISUw28BB9w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

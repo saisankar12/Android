@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">WidgetTest</string>
+
+    <string-array name="names">
+        <item>Deepika</item>
+        <item>Niharika</item>
+    </string-array>
+
+    <string-array name="details">
+        <item>Details of Mr perfect</item>
+        <item>Details of silent killer</item>
+    </string-array>
+
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+</resources>

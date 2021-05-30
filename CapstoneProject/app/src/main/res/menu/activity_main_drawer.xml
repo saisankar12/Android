@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_homeFragment"
+            android:icon="@drawable/home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_sports"
+            android:icon="@drawable/gnews"
+            android:title="Cricket News" />
+        <item
+            android:id="@+id/nav_upcoming"
+            android:icon="@drawable/eventnote"
+            android:title="Upcoming Matches" />
+        <item
+            android:id="@+id/nav_oldmatches"
+            android:icon="@drawable/tech"
+            android:title="Old Matches" />
+
+        <item
+            android:id="@+id/nav_timetable"
+            android:icon="@drawable/timetable"
+            android:title="Time table" />
+
+        <item
+            android:id="@+id/nav_playerInfo"
+            android:icon="@drawable/sports"
+            android:title="Player Info" />
+
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+
+
+    </group>
+
+
+</menu>

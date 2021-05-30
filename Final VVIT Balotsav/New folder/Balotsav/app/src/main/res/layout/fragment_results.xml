@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ResultsFragment"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.github.barteksc.pdfviewer.PDFView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:id="@+id/id_result_pdf"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="40sp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/id_empty_results"
+        android:text="@string/events_not_started"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_margin="10dp"/>
+
+</FrameLayout>

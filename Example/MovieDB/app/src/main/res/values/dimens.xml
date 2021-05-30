@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="detail_backdrop_height">256dp</dimen>
+    <dimen name="backdrop_horizontal_margin">60dp</dimen>
+    <dimen name="backdrop_vertical_margin">30dp</dimen>
+    <dimen name="card_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="paddingbottom">10dp</dimen>
+    <dimen name="paddingleft">10dp</dimen>
+    <dimen name="paddingright">10dp</dimen>
+    <dimen name="paddingtop">10dp</dimen>
+    <dimen name="radius">5dp</dimen>
+    <dimen name="elevation">30dp</dimen>
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">8dp</dimen>
+</resources>

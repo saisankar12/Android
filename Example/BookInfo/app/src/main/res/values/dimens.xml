@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">8dp</dimen>
+    <dimen name="textsize">20sp</dimen>
+    <dimen name="ts">25sp</dimen>
+    <dimen name="wi">100dp</dimen>
+    <dimen name="mt">5dp</dimen>
+    <dimen name="ml">10dp</dimen>
+    <dimen name="img">200dp</dimen>
+    <dimen name="signText">30sp</dimen>
+
+    <dimen name="tTop">64dp</dimen>
+
+</resources>

@@ -1,0 +1,28 @@
+package com.example.hp.capstoneproject.model;
+
+public class ScheduleMatches
+{
+    private String name;
+    private String date;
+
+    public ScheduleMatches(String name, String date) {
+        this.name = name;
+        this.date = date;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+}

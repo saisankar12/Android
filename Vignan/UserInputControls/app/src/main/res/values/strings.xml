@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">UserInputControls</string>
+
+    <string-array name="college">
+        <item>Selcect College</item>
+        <item>Vignan</item>
+        <item>NEC</item>
+        <item>VR</item>
+        <item>VVIT</item>
+        <item>KL</item>
+    </string-array>
+</resources>

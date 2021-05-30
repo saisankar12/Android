@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/back"
+    tools:context=".Splas">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="@dimen/img"
+        android:layout_height="@dimen/img"
+        android:layout_marginLeft="@dimen/wi"
+        android:layout_marginTop="@dimen/img"
+        app:cardBackgroundColor="@color/back"
+        app:cardCornerRadius="@dimen/ml"
+        android:elevation="@dimen/ml"
+        >
+        <ImageView
+            android:layout_width="@dimen/img"
+            android:layout_height="@dimen/img"
+            android:contentDescription="@string/splash"
+            android:src="@drawable/books" />
+    </android.support.v7.widget.CardView>
+
+
+    <com.jpardogo.android.googleprogressbar.library.GoogleProgressBar
+        android:id="@+id/progres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        />
+</LinearLayout>

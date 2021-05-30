@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".quiz">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textSize="30sp"
+            android:textColor="#000"
+            android:textAlignment="viewEnd"
+            android:id="@+id/txtTimer"
+            android:gravity="end" />
+        <TextView
+            android:id="@+id/txtQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:text="Question"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:id="@+id/btnOption1"
+            android:text="OPTION 1"
+            android:background="#03A9F4"/>
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:id="@+id/btnOption2"
+            android:layout_marginLeft="15dp"
+            android:text="OPTION 2"
+            android:background="#03A9F4"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="180dp"
+                android:layout_height="150dp"
+                android:id="@+id/btnOption3"
+                android:text="OPTION 3"
+                android:background="#03A9F4"/>
+            <Button
+                android:layout_width="180dp"
+                android:layout_height="150dp"
+                android:id="@+id/btnOption4"
+                android:layout_marginLeft="15dp"
+                android:text="OPTION 4"
+                android:background="#03A9F4"/>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtscoreview"
+                android:layout_gravity="center"
+                android:textSize="25sp"/>
+        </LinearLayout>
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/myProgress"
+            />
+    </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

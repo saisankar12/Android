@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#7986CB">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/img"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="title"
+                android:textColor="#ffffff"
+                android:id="@+id/title"
+                android:textAppearance="?android:textAppearanceLargeInverse"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="140dp"/>
+            <TextView
+                android:id="@+id/scientific_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Scientific Name"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="?android:textAppearanceMediumInverse"
+                android:textColor="#ffffff"
+                android:layout_marginTop="170dp"/>
+        </FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:id="@+id/classification"
+            android:layout_margin="10dp"
+            android:text="Classification: "/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Danger Level"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/scale"
+            />
+        <RatingBar
+            android:id="@+id/danger"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:numStars="10"
+            android:layout_marginLeft="10dp"
+            android:stepSize="1.0"
+            android:rating="0"
+            android:isIndicator="true"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            style="@style/danger_rating" />
+
+
+    </LinearLayout>
+
+</ScrollView>

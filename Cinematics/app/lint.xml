@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="IconLocation">
+        <ignore path="src/main/res/drawable/cal.png" />
+        <ignore path="src/main/res/drawable/movie_iconk2.png" />
+        <ignore path="src/main/res/drawable/movieiconk1.png" />
+        <ignore path="src/main/res/drawable/movieiconk3.png" />
+        <ignore path="src/main/res/drawable/rate.png" />
+        <ignore path="src/main/res/drawable/title.png" />
+        <ignore path="src/main/res/drawable/user.png" />
+        <ignore path="src/main/res/drawable/video.png" />
+    </issue>
+</lint>

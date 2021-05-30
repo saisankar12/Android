@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.navigationcomponents.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_calls"
+            app:destination="@id/calls" />
+        <action
+            android:id="@+id/action_home2_to_chats"
+            app:destination="@id/chats" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/calls"
+        android:name="com.example.navigationcomponents.Red"
+        android:label="fragment_calls"
+        tools:layout="@layout/fragment_red" />
+    <fragment
+        android:id="@+id/chats"
+        android:name="com.example.navigationcomponents.Green"
+        android:label="fragment_chats"
+        tools:layout="@layout/fragment_chats" />
+    <fragment
+        android:id="@+id/status"
+        android:name="com.example.navigationcomponents.Blue"
+        android:label="fragment_status"
+        tools:layout="@layout/fragment_status" />
+
+</navigation>

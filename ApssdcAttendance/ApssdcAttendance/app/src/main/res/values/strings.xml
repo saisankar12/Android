@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">APSSDC Attendance</string>
+    <string name="action_login">Employee Login</string>
+    <string name="action_settings">Setting</string>
+    <string name="action_locationTracking">Geofence Tracking</string>
+    <string name="action_open">Open</string>
+    <string name="action_close">Close</string>
+
+    <!--Project URLS-->
+    <!--<string name="app_version">http://202.65.133.69:8181/attendance/attendance/getAppVersion</string>
+    <string name="login">http://202.65.133.69:8181/andromeda/security/login</string>
+    <string name="attendance">http://202.65.133.69:8181/attendance/attendance/addPresence</string>
+    <string name="workLog">http://202.65.133.69:8181/emp/worklog/worklog</string>-->
+    <string name="app_version">http://engineering.apssdc.in/attendance/attendance/getAppVersion</string>
+    <string name="login">http://engineering.apssdc.in/andromeda/security/login</string>
+    <string name="attendance">http://engineering.apssdc.in/attendance/attendance/addPresence</string>
+    <string name="workLog">http://engineering.apssdc.in/emp/worklog/worklog</string>
+    <string name="issue">http://engineering.apssdc.in/emp/issues/insertIssue</string>
+    <string name="report">http://engineering.apssdc.in/emp/employee/employee</string>
+
+</resources>

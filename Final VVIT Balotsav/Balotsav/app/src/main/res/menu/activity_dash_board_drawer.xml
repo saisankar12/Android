@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+    <item android:title="">
+        <menu>
+        </menu>
+    </item>
+    <group android:checkableBehavior="single"
+       >
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_event"
+            android:icon="@drawable/ic_edit_black_24dp"
+            android:title="@string/registration" />
+        <item
+            android:id="@+id/nav_edit"
+            android:icon="@drawable/ic_event_available_black_24dp"
+            android:title="@string/registered_events" />
+
+        <item
+            android:id="@+id/nav_results"
+            android:icon="@drawable/ic_content_paste_black_24dp"
+            android:title="@string/results" />
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/ic_hearing_black_24dp"
+            android:title="@string/announcements" />
+        <item
+            android:id="@+id/nav_rules"
+            android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+            android:title="@string/general_rules" />
+    </group>
+    <item android:title="">
+        <menu>
+            <item
+            android:id="@+id/about_us"
+            android:icon="@drawable/ic_perm_device_information_black_24dp"
+            android:title="@string/about_us" />
+        </menu>
+    </item>
+
+</menu>
